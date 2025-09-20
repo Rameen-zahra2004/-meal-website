@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:rgb(202, 202, 196)
+}
+html{
+  scroll-behavior: smooth;
+}
+#navbar{
+  display: flex;
+  align-items: center;
+  position:sticky;
+  top: 0px;
+  width: 100%;
+
+}
+#logo{
+  margin: 10px 34px;
+}
+#logo img {
+  margin:3px 6px;
+  height:50px;
+  background-size: cover;
+}
+#navbar ul{
+  display: flex;
+  font-family: sans-serif;
+}
+#navbar::before{
+  content: "";
+  background-color:black ;
+  position: absolute;
+  top:0px;
+  left:0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li{
+  list-style: none;
+  font-size: 1.3rem;
+
+}
+#navbar ul li a{
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+#navbar ul li a:hover{
+  color: black;
+  background-color:white ;
+}
+/* home section*/
+#home{
+  display: flex;
+  flex-direction: column;
+  /*padding: 3px 200px;*/
+  justify-content: center;
+  align-items: center;
+  height:557px;
+}
+#home::before{
+  content: "";
+  background:url('../top-view-meals-tasty-yummy-different-pastries-dishes-brown-surface.jpg');
+  position: absolute;
+  height:642px;
+  width:100%;
+  top:0px;
+  left:0px;
+  z-index: -1;
+  opacity: 0.89;
+background-size: cover;
+}
+#home h1{
+  color: white;
+  text-align: center;
+  font-family:serif;
+}
+#home p{
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family:serif;
+}
+/*services section*/
+
+#services{
+  margin:20px;
+  display:inline-block;
+  width: 580px;
+  /*align-items: center;*/
+  justify-content:space-evenly;
+  /*align-content: center;*/
+}
+
+#services .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 25px 6px;
+  border-radius: 28px;
+  background-color: rgb(228, 223, 223);
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#services .box img{
+  height:100px;
+  background-size: cover;
+  display: block;
+  margin: auto;
+}
+#services p{
+  font-family:serif;
+}
+/*Client Section*/
+#client-section {
+  /*height: 344px;*/
+  position: relative;
+}
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../360_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg');
+ height: 100%;
+ width:100%;
+ z-index:-1;
+ background-size: cover;
+
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+ /* z-index: -1;*/
+}
+.clients-item{
+  padding: 34px;
+  height:100px;
+  width:100px;
+}
+#clients img {
+  height:100px;
+  width: 100px;
+  opacity:1;
+  background-size:cover;
+  border-radius: 30%;
+}
+/* COntact section*/
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity:0.6 ;
+  background: url('contact-us-customer-support-hotline-people-connect-call-custo-130157516.webp') no-repeat center center/cover;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+}
+#contact-box input,#contact-box textarea{
+  width:100%;
+  padding:0.5rem;
+  border-radius:9px;
+  font-size: 1.1rem;
+
+}
+#contact-box form{
+  width: 40%;
+}
+#contact-box label{
+  font-size: 1.3rem;
+  font-family:serif ;
+
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+
+/*Utality classes*/
+.h-primary{
+  font-size:2.8rem;
+  padding:10px;
+  font-family:serif;
+}
+.h-secondary{
+  font-size:2rem;
+  padding:10px;
+  font-family:serif;
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color:brown;
+  color:white;
+  margin: 17px ;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center{
+  text-align: center;
+}
+
+
